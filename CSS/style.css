@@ -110,7 +110,7 @@ nav ul li a:hover::after{
     flex-basis: 60%;
 }
 
-#description h2{
+.sub_title{
     font-size: 60px;
     font-weight: 600;
     color: #fff;
@@ -179,7 +179,127 @@ color: #786D60;
     display: block;
 }
 
+/*skills*/
+
+#skills{
+    padding: 0px 0;
+
+}
+
+
+.skills_list,
+.soft_skills_list {
+    opacity: 0;
+    visibility: hidden;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    
+}
+
+.skills_list.active {
+    
+    opacity: 1;
+    visibility: visible;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap:40px;
+    margin-top: 30px;
+    padding-top: 20px;
+    max-height: 470px;
+    overflow: hidden;
+
+}
+
+.soft_skills_list.active{
+    opacity: 1;
+    visibility: visible;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap:40px;
+    margin-top: 30px;
+    max-height: 430px;
+    overflow: hidden;
+    padding-top: 20px;
+}
+
+.skills_list.active.expanded,
+.soft_skills_list.active.expanded{
+    max-height: 2000px;
+}
 
 
 
+#buttons_skills{
+    background-color: #D1B496;
+    border-radius: 15px ;
+    border: solid #3B3130;
+    margin-top: 20px ;
+    width: 290px;
+}
 
+
+#soft_skills,
+#hard_skills
+{
+    font-weight: 500;
+    border-style: none;
+    padding: 15px 20px;
+    border-radius: 15px;
+    margin:5px;
+    transition: 0.5s;
+    cursor: pointer;
+    background-color: transparent;
+    color: #3B3130;
+
+   
+}
+
+#soft_skills.active_btn,
+#hard_skills.active_btn{
+    background-color: #3B3130;
+    color: white;
+
+}
+
+.skills_list div,
+.soft_skills_list div{
+    background-color: #3B3130;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-right: 10px;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+
+.skills_list h3,
+.soft_skills_list h3{
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.skills_list div:hover,
+.soft_skills_list div:hover{
+    background-color: #D1B496;
+    transform: translateY(-10px);
+}
+
+#see_soft_btn,
+#see_hard_btn{
+    border-style: none;
+    background-color: #D1B496;
+    color: #3B3130;
+    border: solid 2px #3B3130;
+    border-radius: 10px;
+    padding: 15px 10px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+/*portfolio*/
+
+#portfolio{
+    padding: 50px 0;
+}
