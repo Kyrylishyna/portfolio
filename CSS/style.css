@@ -296,6 +296,13 @@ color: #786D60;
     padding: 15px 10px;
     font-weight: 600;
     margin-top: 20px;
+    transition: color 0.5s, background 0.5s;
+}
+
+#see_soft_btn:hover,
+#see_hard_btn:hover{
+    background-color: #3B3130;
+    color: #D1B496;
 }
 
 /*portfolio*/
@@ -390,3 +397,93 @@ color: #786D60;
 
 
 }
+
+
+/*contact*/
+#contact{
+    margin:40px;
+}
+.contact_left{
+    flex-basis: 35%;
+}
+
+.contact_right{
+    flex-basis: 60%;
+}
+
+.contact_left p{
+    margin-top: 30px;
+}
+
+.contact_left p i{
+    color: #D1B496;
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.social_media{
+    margin-top: 30px;
+
+}
+
+.social_media a{
+    font-size: 30px;
+    text-decoration: none;
+    margin-right: 15px;
+    color: #786D60;
+    display: inline-block;
+    cursor: pointer;
+    transition: color 0.5s, transform 0.5s;
+}
+
+.social_media a:hover{
+    color: #D1B496;
+    transform: translateY(-5px);
+}
+
+.btn{
+    text-decoration: none;
+    display: inline-block;
+    background-color: #D1B496;
+    color: #3B3130;
+    border: solid 2px #3B3130;
+    border-radius: 10px;
+    padding: 15px 10px;
+    font-weight: 600;
+    margin-top: 30px;
+    transition: color 0.5s, background 0.5s;
+}
+
+.btn:hover{
+    background-color: #3B3130;
+    color: #D1B496;
+}
+
+.contact_right form{
+    width: 100%;
+
+}
+
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background-color: #3B3130;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+form input::placeholder, form textarea::placeholder{
+    color: #786D60;
+}
+
+form .btn{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
