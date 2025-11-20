@@ -12,17 +12,20 @@
     <script src="https://kit.fontawesome.com/bd770e1cc8.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
+    <header id="header">
         <div class="container">
             <nav>
                 <img src="IMG/logo.png" alt="myLogo" class="logo">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Education</a></li>
-                    <li><a href="#">Experience</a></li>
-                    <li><a href="#">Contact</a></li>
+                <ul id="side_menu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
                 </ul>
+                <i class="fa-solid fa-list" onclick="openMenu()"></i>
+
             </nav>
             <div id="header_text">
                 <p>Web Development Student</p>
@@ -223,15 +226,21 @@
                     <a href="FILES/Kyrylishyna_Viktoriia_CV.pdf" download class="btn">Download CV</a>
                 </div>
                 <div class="contact_right">
-                    <form>
+                    <form  name="submit-to-google-sheet">
                         <input type="text" name="Name" placeholder="Your Name" required>
                         <input type="email" name="Email" placeholder="Your Email" required>
                         <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
                         <button type="submit" class="btn">Submit</button>
                     </form>
+                    <span id="msg"></span>
                 </div>
             </div>
         </div>
     </article>
+    <footer>
+        <div class="container">
+            <p>&copy; Viktoriia Kyrylishyna</p>
+        </div>
+    </footer>
 </body>
 </html> 

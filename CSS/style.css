@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: #1D1D1F;
     color:#ffffff;
@@ -14,6 +18,7 @@ body{
 header{
     width: 100%;
     height: 100vh;
+    background-attachment: fixed;
     background-image: url(../IMG/backgroundIMG.jpg) ;
     background-size: cover;
     background-position: center;
@@ -401,7 +406,7 @@ color: #786D60;
 
 /*contact*/
 #contact{
-    margin:40px;
+    margin:10px;
 }
 .contact_left{
     flex-basis: 35%;
@@ -451,6 +456,7 @@ color: #786D60;
     padding: 15px 10px;
     font-weight: 600;
     margin-top: 30px;
+    margin-bottom: 20px;
     transition: color 0.5s, background 0.5s;
 }
 
@@ -486,4 +492,120 @@ form .btn{
     margin-top: 20px;
     cursor: pointer;
 }
+
+footer p{
+    margin: 30px auto;
+    width: 100%;
+    text-align: center;
+
+}
+
+
+
+/* css for smaool screen */
+nav .fa-solid{
+    display: none;
+}
+
+@media only screen and (max-width: 600px){
+    header{
+        background-image: url(../IMG/background2.jpg);
+        margin: 0;
+    }
+    #header_text{
+        margin-top: 10%;
+        font-size:16px;
+    }
+    #header_text h1{
+        font-size: 30px;
+        margin-top: 0px;
+    }
+    nav .fa-solid{
+        display: block;
+        font-size: 25px;
+    }
+
+    nav ul {
+        background-color: #3B3130;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px ;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    .sub_title{
+        font-size: 40px;
+    }
+
+    #image, #description{
+        flex-basis: 100%;
+    }
+    #image{
+        margin-bottom: 30px;
+    }
+    #description{
+        font-size: 14px;
+
+    }
+
+    .tab_titles .tab_links{
+        font-size: 14px;
+        margin-right: 20px;
+    }
+    .soft_skills_list.active{
+        max-height: 500px;
+
+    }
+
+    .skills_list.active{
+        max-height: 550px;
+    }
+
+    .skills_list.active.expanded,
+    .soft_skills_list.active.expanded{
+        max-height: 2100px;
+    }
+
+    #projects_description{
+        width: 100%;
+        font-size: 14px;
+    }
+    .work.placeholder {
+        visibility: hidden;
+        display: none;
+    }   
+
+    .contact_right, .contact_right{
+        flex-basis: 100%;
+    }
+    .contact_left p{
+        font-size: 14px;
+        margin-right: 0;
+    }
+    .contact_left p i{
+        font-size: 15px;
+        margin-right: 3px;
+    }
+}
+
+#msg{
+    color: green;
+    display: block;
+}
+
 
