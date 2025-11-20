@@ -87,7 +87,7 @@ nav ul li a:hover::after{
 
 #about{
     padding: 80px 0;
-    color: #D3AC2C;
+    
 }
 
 .row{
@@ -118,7 +118,7 @@ nav ul li a:hover::after{
 }
 
 #description p{
-    color: #D1B496;
+    color: #FED8B1;
     line-height: 22px;
     
 }
@@ -162,7 +162,7 @@ nav ul li a:hover::after{
     list-style: none;
     margin: 10px 0;
     width:70%;
-    color: #D1B496;
+    color: #FED8B1;
 
 }
 
@@ -225,7 +225,7 @@ color: #786D60;
 
 .skills_list.active.expanded,
 .soft_skills_list.active.expanded{
-    max-height: 2000px;
+    max-height: 2100px;
 }
 
 
@@ -302,4 +302,91 @@ color: #786D60;
 
 #portfolio{
     padding: 50px 0;
+    
+}
+
+.work_list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap:40px;
+    margin-top: 50px;    
+}
+
+.work{
+    max-width: 400px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 1 / 1;
+}
+
+.work img{
+    width:100%;
+    height: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+    
+
+    
+}
+
+.layer{
+    width: 100%;
+    height:0;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), #3B3130);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+    
+}
+
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+
+}
+
+.layer a{
+    text-decoration: none;
+    margin-top: 20px;
+    color: #3B3130;
+    font-size: 18px;
+    line-height: 60px;
+    background-color: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+
+}
+
+.work:hover img{
+    transform: scale(1.1);
+}
+
+.work:hover .layer{
+    height: 100%;
+}
+
+.work.placeholder {
+  visibility: hidden;
+}
+
+#projects_description{
+    width: 50%;
+    margin-top: 30px;
+    color: #FED8B1;
+
+
 }
