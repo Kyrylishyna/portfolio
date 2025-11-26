@@ -83,7 +83,7 @@ Includes:
 ---
 
 ## Google Sheets Integration
-- Uses a deployed Google Apps Script endpoint  
+- Uses a deployed Google Apps Script endpoint  https://docs.google.com/spreadsheets/d/1Wvwt2a4z0cq1EXd74BOCwWn-w-9C_Li6ihruCxIacIg/edit?gid=0#gid=0
 - Sends a POST request via `fetch()` API in JavaScript  
 - Automatic timestamping and row creation on the sheet
 
